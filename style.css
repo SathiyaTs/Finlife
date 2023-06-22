@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+     width:90% ;
+     margin: auto;
+     padding: 25px ;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display :inline-block;
+    margin: 0 20px;
+    /*text-transform: uppercase;*/
+    color: white;
+    position: relative;
+}  
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+} 
+.navbar ul li a:hover{
+    color: brown;
+} 
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width:0;
+    background: #009688;
+    position:absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+
+} 
+.navbar ul li:hover::after{
+    width:100%;
+}
+.dropdown{
+    display:none;
+}
+.navbar ul li:hover .dropdown{
+    display: block;
+    position:absolute;
+    left:0;
+    top:100%;
+    background-color: black;
+}
+.navbar ul li:hover .dropdown ul{
+    display:block;
+    margin: 10px;
+}
+.navbar ul li:hover .dropdown ul li{
+    width:150px;
+    padding:10px;
+    
+}
+

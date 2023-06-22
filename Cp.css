@@ -1,0 +1,34 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+background-image: url(background.jpg);
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.menu-bar
+{
+    background-color:  black;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+     
+}
+.logo
+{
+    color: white;
+    font-size: 30px;
+    }
+    .logo span{
+        color:blue;
+    }
